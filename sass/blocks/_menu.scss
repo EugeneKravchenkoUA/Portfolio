@@ -1,0 +1,118 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 10;
+
+  &.active {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__block {
+    position: relative;
+    padding-top: 140px;
+    padding-left: 40px;
+    width: 345px;
+    background: $main-color;
+    height: 100%;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+
+    i {
+      font-size: 40px;
+      color: white;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      i {
+        color: purple;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 35px;
+  }
+
+  &__link {
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid white;
+      left: -35px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      &::before {
+        background: white;
+        transition: all 0.5s;
+      }
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      color: white;
+      transition: all 0.5s;
+
+      &:hover {
+        color: purple;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__social {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    i {
+      font-size: 25px;
+      color: white;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.75;
+  }
+}

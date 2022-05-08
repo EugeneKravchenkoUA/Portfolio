@@ -1,0 +1,31 @@
+.sidepanel {
+  position: fixed;
+  width: 340px;
+  top: 380px;
+  left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(-50%) rotate(-90deg);
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+  }
+  &__divider {
+    width: 70px;
+    height: 2px;
+    background: white;
+  }
+  a {
+    i {
+      color: white;
+      font-size: 25px;
+    }
+    &:hover {
+      i {
+        color: $main-color;
+      }
+    }
+  }
+}
