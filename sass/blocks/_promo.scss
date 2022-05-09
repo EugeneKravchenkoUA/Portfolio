@@ -45,16 +45,24 @@
     justify-content: space-between;
     align-items: flex-end;
     cursor: pointer;
+    
+
+    &:hover {
+      span {
+        background: $main-color;
+      }
+    }
 
     span {
       display: block;
-      width: 30px;
+      width: 36px;
       height: 3px;
       background: #ffffff;
+      transition: all 0.5s;
     }
 
     span.long {
-      width: 36px;
+      width: 40px;
     }
   }
 }
