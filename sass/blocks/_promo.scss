@@ -28,9 +28,10 @@
   &__link {
     font-weight: 700;
     color: white;
+    transition: all 0.5s;
 
     &:hover {
-      color: rebeccapurple;
+      color: purple;
       text-decoration: none;
     }
   }
