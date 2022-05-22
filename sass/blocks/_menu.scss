@@ -103,6 +103,11 @@
     i {
       font-size: 25px;
       color: white;
+      transition: all 0.5s;
+
+      &:hover {
+        color: purple;
+      }
     }
   }
 

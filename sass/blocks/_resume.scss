@@ -1,0 +1,108 @@
+.resume {
+    padding-top: 120px;
+
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before-circle;
+
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__wrapper {
+        padding: 60px 65px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 43px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 25%;
+                left: -7px;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background: $main-color;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: calc(100% + 16px);
+                top: -16px;
+                left: 0px;
+                background: black;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 63px;
+            width: 43px;
+            height: 1px;
+            background: black;
+        }
+        &-head {
+            position: relative;
+            padding-top: 35px;
+            padding-left: 100px;
+        }
+
+        &-icon {
+            position: absolute;
+            top: 45px;
+            left: 60px;
+
+            img {
+                position: absolute;
+                top: 14px;
+            }
+
+            @include before-circle;
+
+            &::before {
+                left: -17px;
+            }
+        }
+
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-body {
+            margin-top: 20px;
+            padding-left: 43px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
