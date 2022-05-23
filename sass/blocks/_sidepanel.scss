@@ -10,22 +10,22 @@
   &__text {
     font-weight: 700;
     font-size: 16px;
-    color: white;
+    color: $main-color;
   }
   &__divider {
     width: 70px;
     height: 2px;
-    background: white;
+    background: $main-color;
   }
   a {
     i {
-      color: white;
+      color: $main-color;
       font-size: 25px;
       transition: all 0.5s;
     }
     &:hover {
       i {
-        color: $main-color;
+        color: purple;
       }
     }
   }

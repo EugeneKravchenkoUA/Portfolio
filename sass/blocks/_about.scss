@@ -52,13 +52,13 @@
         }
 
         &-img {
-            padding-top: 15px;
+            padding-top: 21px;
             padding-left: 15px;
             position: relative;
             @include before-circle;
 
             &::before {
-                top: 0;
+                top: 6px;
             }
         }
 
