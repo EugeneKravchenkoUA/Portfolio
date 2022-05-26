@@ -25,4 +25,19 @@
   &_fz_48 {
     font-size: 48px;
   }
+
+  &_less {
+    position: relative;
+    text-align: center;
+    @include before-circle;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &_more {
+    text-align: center;
+  }
 }
